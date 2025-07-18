@@ -1,0 +1,144 @@
+body {
+    margin: 0%;
+    overflow-y: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    background-color: red;
+    width: 100%;
+}
+
+.header-menu {
+    text-decoration: none;
+}
+.header-bar{
+    position: fixed;
+    width: 100%;
+    margin: -4.7px;
+    z-index: 1000;
+    background-color: black;
+}
+.menu-item{
+    text-decoration: none;
+    color: white;
+}
+.menu-item:hover{
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    /* Sit on top of the page content */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: inherit;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.778);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+}
+
+.header-container {
+    background: url('Assets/images/dev.jpg');
+    background-size: cover;
+    height: 780px;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 20vh;
+    font-weight: 500;
+}
+
+.project-header {
+    font-size: 20vh;
+    background-color: #2f8d46;
+    background-image: url("https://media.geeksforgeeks.org/wp-content/uploads/20231218222854/1.png");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 120px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke: 1px white;
+}
+
+.project {
+    border: 5px solid white;
+}
+
+.project-details {
+    border: 1px solid white;
+    border-radius: 10px;
+    flex-direction: row;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.133);
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-display-image {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid white;
+
+}
+
+.Contect-Me{
+    font-size: 10vh;
+    font-weight: 500;
+}
+
+form{
+    font-size: 2.3vh;
+}
+
+.form-field {
+    margin-top: 20px;
+}
+
+.contact-us input{
+    background-color: #222;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+.submit{
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    padding: 4px 20px;
+}
+
+.form-content label {
+    width: 200px;
+}
+
+.form-content input {
+    border: 0;
+    border-bottom: 1px solid white;
+    background: transparent;
+    width: 400px;
+}
+
+.form-content input:focus {
+    outline: none;
+}
