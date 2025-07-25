@@ -15,17 +15,23 @@ header {
 .header-menu {
     text-decoration: none;
 }
-.header-bar{
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
     position: fixed;
     width: 100%;
     margin: -4.7px;
     z-index: 1000;
 }
-.menu-item{
+
+.menu-item {
     text-decoration: none;
     color: white;
 }
-.menu-item:hover{
+
+.menu-item:hover {
     transform: scale(1.05);
 }
 
@@ -101,12 +107,12 @@ header {
 
 }
 
-.Contect-Me{
+.Contect-Me {
     font-size: 10vh;
     font-weight: 500;
 }
 
-form{
+form {
     font-size: 2.3vh;
 }
 
@@ -114,13 +120,14 @@ form{
     margin-top: 20px;
 }
 
-.contact-us input{
+.contact-us input {
     background-color: #222;
     color: white;
     border: 1px solid #555;
     border-radius: 5px;
 }
-.submit{
+
+.submit {
     border: 1px solid white;
     background: transparent;
     color: white;
@@ -140,4 +147,70 @@ form{
 
 .form-content input:focus {
     outline: none;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 600px) {
+    .header-bar {
+        /* flex-direction: column; */
+        padding: 10px;
+        gap: 10px;
+        text-align: center;
+        position: static;
+    }
+
+    .menu-item {
+        display: block;
+        margin: 10px 0;
+        font-size: 18px;
+        color: white;
+    }
+
+    .header-text {
+        font-size: 10vh;
+        margin-top: 50%;
+        text-align: center;
+    }
+
+    .about{
+        display: flex;
+    }
+
+    .project-header {
+        font-size: 40px;
+    }
+
+    .d-flex {
+        flex-direction: column !important;
+    }
+
+    .project-details {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-content input {
+        width: 100%;
+    }
+
+    .form-content label {
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .submit {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contact-us {
+        padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
